@@ -1,0 +1,20 @@
+created 2 folders frontend and backend
+cd backend
+npm init -y // install libraries
+created index.js and in it
+npm i express mysql nodemon
+then added this - "start": "nodemon index.js" in start
+write this code
+then create a react app in the folder by using "npx create-react-app . "
+then write some more code
+npm install axios
+fix cors issue by installing it in the back end
+after a long trouble i did ,
+-- Select the database
+USE your_database_name;
+
+-- Modify the column in the table
+ALTER TABLE your_table_name
+MODIFY COLUMN id INT AUTO_INCREMENT;
+// just because of this shit it made me waste 2 hours on this
+also i did, ALTER TABLE books MODIFY COLUMN cover VARCHAR(255);
