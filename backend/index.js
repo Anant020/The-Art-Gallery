@@ -8,11 +8,23 @@ app.use(cors());
 app.use(express.json());
 
 const db = mysql.createConnection({
-    host:"localhost",
-    user:"root",
-    password:"1234",
-    database:"test"
-})
+  host: "sql6.freesqldatabase.com",
+  user: "sql6680802",
+  password: "IF2bEbIR8b",
+  database: "sql6680802",
+  port: 3306,
+});
+
+db.connect((err) => {
+  if (err) {
+      console.error('Error connecting to MySQL database:', err);
+  } else {
+      console.log('Connected to MySQL database');
+  }
+});
+
+
+
 app.get("/", (req,res)=>{
     res.json("Hello this is the Backend");
 })
