@@ -15,7 +15,7 @@ export default function Add() {
 
     const navigate = useNavigate();
     const location =useLocation();
-    //Mf really consoled the location and then split off the number he needed
+    // Mf really consoled the location and then split off the number he needed
     const bookId = location.pathname.split("/")[2];
     const handleclick = async (e) => {
         e.preventDefault();
