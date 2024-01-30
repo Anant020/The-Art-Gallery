@@ -19,7 +19,7 @@ export default function Add() {
         e.preventDefault();
         try {
             
-            await axios.post("http://localhost:8800/books", book);
+            await axios.post("https://artgallerynode.onrender.com/books", book);
             
             navigate("/");
         } catch (err) {

@@ -9,7 +9,8 @@ export default function Books() {
   useEffect(() => {
     const fetchallbooks = async () => {
       try {
-        const res = await axios.get("http://localhost:8800/books");
+        // const res = await axios.get("http://localhost:8800/books");
+        const res = await axios.get("https://artgallerynode.onrender.com/books");
         // axios se fetching
         setBooks(res.data);
       } catch (err) {
@@ -25,7 +26,8 @@ export default function Books() {
   const handledelete = async (id)=>{
     console.log(id);
     try{
-      await axios.delete("http://localhost:8800/books/"+id);
+      // await axios.delete("http://localhost:8800/books/"+id);
+      await axios.delete("https://artgallerynode.onrender.com/books/"+id);
       window.location.reload();
     }catch(err){
       console.log(err);

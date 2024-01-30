@@ -20,7 +20,7 @@ export default function Add() {
     const handleclick = async (e) => {
         e.preventDefault();
         try {
-            await axios.put("http://localhost:8800/books/"+bookId, book);
+            await axios.put("https://artgallerynode.onrender.com/books/"+bookId, book);
             navigate("/");
         } catch (err) {
             console.log(err);
